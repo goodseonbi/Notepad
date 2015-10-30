@@ -1,14 +1,14 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Hossain Mohd Faysal
-tags: [Hossain, Mohd, Faysal, hmfaysal]
+title: Han Bi Seon
+tags: [SeonBi, Han]
 imagefeature: fourseasons.jpg
 chart: true
 ---
 <figure>
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Hossain Mohammad Faysal">
-  <figcaption>Hossain Mohammad Faysal</figcaption>
+  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Han Bi Seon">
+  <figcaption>Han Bi Seon</figcaption>
 </figure>
 
 {% assign total_words = 0 %}
