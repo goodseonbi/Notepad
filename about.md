@@ -1,14 +1,14 @@
 ---
 layout: page
 permalink: /about/index.html
-title: Han Bi Seon
-tags: [SeonBi, Han]
+title: Good Seon Bi
+tags: [SeonBiTV, GoodSeonBi]
 imagefeature: fourseasons.jpg
 chart: true
 ---
 <figure>
-  <img src="{{ site.url }}/images/hossain-faysal.jpg" alt="Han Bi Seon">
-  <figcaption>Han Bi Seon</figcaption>
+  <img src="{{ site.url }}/images/GoodSeonBi.jpg" alt="Good Seon Bi">
+  <figcaption>Good Seon Bi</figcaption>
 </figure>
 
 {% assign total_words = 0 %}
@@ -27,7 +27,25 @@ chart: true
 {% endfor %}
 
 
-My name is **Hossain Mohd. Faysal**, and this is my personal blog. It currently has {{ site.posts | size }} posts in {{ site.categories | size }} categories which combinedly have {{ total_words }} words, which will take an average reader ({{ site.wpm }} WPM) approximately <span class="time">{{ total_readtime }}</span> minutes to read. {% if featuredcount != 0 %}There are <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %} The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné").
+My name is **Good Seon Bi**, and this is my Publicly blog. 
+
+**Korean**
+
+이 사이트에는 {{ site.posts | size }} 개의 글과 {{ site.categories | size }} 개의 카테고리가 존재하며, 총 {{ total_words }} 개의 글자와 여러분에게 ({{ site.wpm }} WPM) 대략 <span class="time">{{ total_readtime }}</span> 분 동안의 읽을 거리를 제공합니다. {% if featuredcount != 0 %}그리고 <a href="{{ site.url }}/featured">{{ featuredcount }} 추천 게시물</a> 이 있습니다. {% endif %} 가장 최근 글은 {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} 이며 작성된 시간은 {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %} 입니다.
+
+**착한선비** 는 **다음팟** 과 **트위치TV** 에서 방송을 하고 있으며, 차후 **아프리카TV** 나 다양한 인터넷 방송국을 운영할 계획이다. 주로 **게임**을 주제로 **PS4** 와 **PC**로 주로 방송을 한다. 방송 녹화분들은 **유투브**에 업로드 하며 최대한 고화질의 영상을 업로드 하도록 노력 중이다. 나긋나긋하면서 느끼한 목소리로 진행하며 방송을 시작한 날짜는 2016-03-10 이다. 
+
+*[다음팟] : 다음에서 서비스 하는 개인 인터넷 방송 서비스.
+*[트위치TV] : 게임 전용 인터넷 개인 방송 서비스.
+*[아프리카TV] : 대한민국에서 가장 큰 개인 인터넷 방송 서비스.
+
+이 사이트를 방문해주신 모든 시청자분들에게 감사하며, 재미난 방송을 제공하도록 노력하겠습니다.
+
+**감사합니다***
+
+
+
+It currently has {{ site.posts | size }} posts in {{ site.categories | size }} categories which combinedly have {{ total_words }} words, which will take an average reader ({{ site.wpm }} WPM) approximately <span class="time">{{ total_readtime }}</span> minutes to read. {% if featuredcount != 0 %}There are <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %} The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné").
 
 I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UPENN**. I am licensed as a Professional Engineer (P.E) to practice in the states of Texas, Massachusetts and California. I double majored in EECS and Mathematics during my undergraduate life at [MIT](http://www.mit.edu/), and currently focusing on Electrical Engineering for my post-graduate studies.
 
