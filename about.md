@@ -31,86 +31,22 @@ My name is **Good Seon Bi**, and this is my Publicly blog.
 
 **Korean**
 
-이 사이트에는 {{ site.posts | size }} 개의 글과 {{ site.categories | size }} 개의 카테고리가 존재하며, 총 {{ total_words }} 개의 글자와 여러분에게 ({{ site.wpm }} WPM) 대략 <span class="time">{{ total_readtime }}</span> 분 동안의 읽을 거리를 제공합니다. {% if featuredcount != 0 %}그리고 <a href="{{ site.url }}/featured">{{ featuredcount }} 추천 게시물</a> 이 있습니다. {% endif %} 가장 최근 글은 {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} 이며 작성된 시간은 {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %} 입니다.
+이 사이트에는 {{ site.posts | size }} 개의 글과 {{ site.categories | size }} 개의 카테고리가 존재하며 {% if featuredcount != 0 %} <a href="{{ site.url }}/featured">{{ featuredcount }} 추천 게시물</a> 이 있습니다. 총 {{ total_words }} 개의 글자로 여러분에게 대략 ({{ site.wpm }} WPM) <span class="time">{{ total_readtime }}</span> 분 동안의 읽을 거리를 제공합니다.  {% endif %} 가장 최근 글은 {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} 이며 작성된 시간은 {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %} 입니다.
 
-**착한선비** 는 **다음팟** 과 **트위치TV** 에서 방송을 하고 있으며, 차후 **아프리카TV** 나 다양한 인터넷 방송국을 운영할 계획이다. 주로 **게임**을 주제로 **PS4** 와 **PC**로 주로 방송을 한다. 방송 녹화분들은 **유투브**에 업로드 하며 최대한 고화질의 영상을 업로드 하도록 노력 중이다. 나긋나긋하면서 느끼한 목소리로 진행하며 방송을 시작한 날짜는 2016-03-10 이다. 
+**착한선비** 는 **다음팟** 과 **트위치TV** 에서 방송을 하고 있으며, 차후 **아프리카TV** 나 다양한 인터넷 방송국을 운영할 계획이다. 주로 **게임**을 주제로 **PS4** 와 **PC**로 방송을 한다. 방송 녹화분들은 **유투브**에 업로드 하며 최대한 고화질의 영상을 업로드 하도록 노력 중이다. 나긋나긋하면서 느끼한 목소리로 진행하며 방송을 시작한 날짜는 2016-03-10 이다. 
+adsf
 
-*[다음팟] : 다음에서 서비스 하는 개인 인터넷 방송 서비스.
-*[트위치TV] : 게임 전용 인터넷 개인 방송 서비스.
-*[아프리카TV] : 대한민국에서 가장 큰 개인 인터넷 방송 서비스.
+*[착한선비]: GoodSeonBi 의 한글이름
+*[다음팟]: 다음에서 서비스 하는 개인 인터넷 방송 서비스
+*[트위치TV]: 게임 전용 인터넷 개인 방송 서비스
+*[아프리카TV]: 대한민국에서 가장 큰 개인 인터넷 방송 서비스
+*[adsf]: 안녕asdf
 
-이 사이트를 방문해주신 모든 시청자분들에게 감사하며, 재미난 방송을 제공하도록 노력하겠습니다.
+이 사이트를 방문해주신 모든 시청자분들에게 재미난 방송을 제공하도록 노력하겠습니다.
 
-**감사합니다***
-
-
-
-It currently has {{ site.posts | size }} posts in {{ site.categories | size }} categories which combinedly have {{ total_words }} words, which will take an average reader ({{ site.wpm }} WPM) approximately <span class="time">{{ total_readtime }}</span> minutes to read. {% if featuredcount != 0 %}There are <a href="{{ site.url }}/featured">{{ featuredcount }} featured posts</a>, you should definitely check those out.{% endif %} The most recent post is {% for post in site.posts limit:1 %}{% if post.description %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}">"{{ post.title }}"</a>{% else %}<a href="{{ site.url }}{{ post.url }}" title="{{ post.description }}" title="Read more about {{ post.title }}">"{{ post.title }}"</a>{% endif %}{% endfor %} which was published on {% for post in site.posts limit:1 %}{% assign modifiedtime = post.modified | date: "%Y%m%d" %}{% assign posttime = post.date | date: "%Y%m%d" %}<time datetime="{{ post.date | date_to_xmlschema }}" class="post-time">{{ post.date | date: "%d %b %Y" }}</time>{% if post.modified %}{% if modifiedtime != posttime %} and last modified on <time datetime="{{ post.modified | date: "%Y-%m-%d" }}" itemprop="dateModified">{{ post.modified | date: "%d %b %Y" }}</time>{% endif %}{% endif %}{% endfor %}. The last commit was on {{ site.time | date: "%A, %d %b %Y" }} at {{ site.time | date: "%I:%M %p" }} [UTC](http://en.wikipedia.org/wiki/Coordinated_Universal_Time "Temps Universel Coordonné").
-
-I am an PhD candidate in *ESE* at the [SEAS](http://www.seas.upenn.edu/) at **UPENN**. I am licensed as a Professional Engineer (P.E) to practice in the states of Texas, Massachusetts and California. I double majored in EECS and Mathematics during my undergraduate life at [MIT](http://www.mit.edu/), and currently focusing on Electrical Engineering for my post-graduate studies.
-
-*[ESE]: Electrical and Systems Engineering
-*[SEAS]: School of Engineering and Applied Science
-*[MIT]: Massachusetts Institute of Technology
-*[EECS]: Electrical and Computer Engineering
-*[UPENN]: University of Pennsylvania
-
-<figure>
-	<img src="{{ site.url }}/images/Hossain-Mohd-Faysal.jpg" alt="Hossain Mohammad Faysal">
-	<figcaption>At Bates Linear Accelerator Center</figcaption>
-</figure>
-
-I was born and brought up in Doha. Yes, its a desert peninsula, yes we have camels and falcons and all the other Middle Eastern traits/stereotypes you can think of.
-
-<figure class="third">
-	<a href="{{ site.url }}/images/about/1.jpg"><img src="{{ site.url }}/images/about/1-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/2.jpg"><img src="{{ site.url }}/images/about/2-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/3.jpg"><img src="{{ site.url }}/images/about/3-001.jpg"></a>
-</figure>
-<figure class="half">
-	<a href="{{ site.url }}/images/about/4.jpg"><img src="{{ site.url }}/images/about/4-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/5.jpg"><img src="{{ site.url }}/images/about/5-001.jpg"></a>
-</figure>
-<figure class="third">
-	<a href="{{ site.url }}/images/about/6.jpg"><img src="{{ site.url }}/images/about/6-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/7.jpg"><img src="{{ site.url }}/images/about/7-001.jpg"></a>
-	<a href="{{ site.url }}/images/about/8.jpg"><img src="{{ site.url }}/images/about/8-001.jpg"></a>
-	<figcaption>Doha at its full glory.</figcaption>
-</figure>
-
-At some point in the not-terribly-distant future, I hope to found a self-sustaining collective of clever people, for fun, profit(?), and the promotion of human life in the universe. This might wind up in Qatar, Bangladesh, Scandinavia, the Massachusetts Bay Area, the SF Bay Area, Japan, Germany, or the dustbin of overly idealistic plans. (Yes, I have a special bin for overly idealistic plans. In my district they can't be recycled with residential mixed paper.) The most challenging aspect of this concept is to curtail unproductive competition with other people who will inevitably have the same idea. (Some sort of cooperative federation...) I'm presently looking for people who might be interested in being a part of such an organization.
-
-Anyways, for now I'm just working toward changing the face of Electrical Engineering forever. Not that I necessarily expect to succeed, but it's something to strive for, and it's a fun problem to work on.
+**감사합니다**
 
 
-Entrepreneur  
-Designer  
-***Engineer***  
-Inventor  
+**English**
 
-I
-make
-stuff.
-
-
-*Beautiful, practical, meaningful stuff.*
-
-
-I make what I love.
-
-*I love what I do.*
-
-
-But over the years, I noticed that somehow, along the way, software designed to help us be creative, actually made us less creative. That's because we believe our best ideas emerge when we use pencils and paper.
-So I set out to build tools that work the way I do.
-
-
-Tools for the creative space — the 53 centimeters that magically link head, heart, and hand. Tools as simple as pencil and paper. Tools so essential, I  really can't imagine work without them.
-
-
-For
-the makers,  
-the creators,  
-the discoverers,  
-the original thinkers,  
-***This is the space to create.***
+Coming soon....
