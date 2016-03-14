@@ -1,5 +1,5 @@
-title:            SeonbiBlog
-description:      "Welcome to My blog"
+title:            SEONBIHOME
+description:      "Welcome to My SeonBiTV Home"
 logo:             logo.png
 disqus_shortname: Seonbi
 share:            true
@@ -11,7 +11,7 @@ url:        	  /blog
 
 # Owner/author information
 owner:
-  name:           Han Bi Seon
+  name:           Good Seon Bi
   avatar:         HanbiSeon.jpg
   email:          goodseonbi@gmail.com
   # Use the coder's toolbox at http://coderstoolbox.net/string/#!encoding=xml&action=encode&charset=us_ascii to encode your description into XML string
@@ -20,7 +20,7 @@ owner:
   twitter:        goodseonbi
   facebook:       goodseonbi
   github:         goodseonbi
-  instagram:      hmfaysal
+  instagram:      https://www.instagram.com
   # For Google Authorship https://plus.google.com/authorship
   google_plus:    https://plus.google.com/u/0/103927222128559557658
 
