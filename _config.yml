@@ -2,6 +2,7 @@ title:            SEONBITV
 description:      "Welcome to My Home"
 logo:             logo.png
 disqus_shortname: goodseonbi
+search:           true
 share:            true
 dropcap:			true
 # Change url to your domain. Leave localhost server or blank when working locally.

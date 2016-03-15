@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Introducing Notepad"
+title: "사진 넣는 법"
 description: 
 headline: 
 modified: 2014-07-19
-category: personal
+category: manual
 tags: []
 imagefeature: cover1.jpg
 comments: true

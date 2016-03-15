@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Theme Elements
+title: 글자 크기,들여쓰기,리스트 타입,표,코드적기,버튼 예제 
 description: "Just about everything you'll need to style in the theme: headings, paragraphs, blockquotes, tables, code blocks, and more."
 modified: 2013-05-31
-category: articles
+category: manual
 tags: [sample post]
 imagefeature: cover6.jpg
 comments: true
