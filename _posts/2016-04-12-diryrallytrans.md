@@ -44,13 +44,13 @@ featured: true
 
 튜닝 쪽의 브레이크 관련 번역 (작업완료)
 
-## [Suspension](dddd)
+## [Suspension](http://goodseonbi.github.io/blog/dirt%20rally%20korean/suspension)
 
-튜닝 쪽의 서스펜션 관련 번역 (작업중)
+튜닝 쪽의 서스펜션 관련 번역 (작업완료)
 
-## [Game Preferences](as)
+## [Game Preferences](http://goodseonbi.github.io/blog/dirt%20rally%20korean/gamepreferences)
 
-전반적인 게임 세팅 (작업중)
+전반적인 게임 세팅 (작업완료)
 
 
 # 추가
